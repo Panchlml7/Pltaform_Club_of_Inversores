@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinero Invertido</title>
+    <link rel="stylesheet" href="principal.css">
+</head>
+<body>
+    <header class="header-principal">
+        <h1>Dinero Invertido</h1>
+        <nav>
+            <ul>
+                <li><a href="principal.html">Inicio</a></li>
+                <li><a href="ganancias.html">Ganancias</a></li>
+                <li><a href="historial.html">Historial</a></li>
+                <li><a href="login.html">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-principal">
+        <section style="text-align:center; margin-bottom:24px;">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Inversión" style="max-width:180px; border-radius:12px; box-shadow:0 2px 8px #0001;">
+        </section>
+        <section class="saldo">
+            <h2>Total invertido</h2>
+            <p class="saldo-cantidad" style="color:#2563eb;">$0.00</p>
+            <p style="color:#64748b;">Inicie sesión para ver su inversión</p>
+        </section>
+        <section style="text-align:center; margin-top:32px;">
+            <h3 style="color:#2563eb;">¡Invierte hoy y haz crecer tu dinero!</h3>
+            <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" alt="Anuncio GIF" style="max-width:220px; border-radius:10px; margin-top:10px;">
+        </section>
+    </main>
+    </body>
+    <nav class="bottom-nav">
+            <a href="principal.html">
+                    <span>🏠</span>
+                    <span class="nav-label">Inicio</span>
+            </a>
+            <a href="dinero.html">
+                    <span>💰</span>
+                    <span class="nav-label">Dinero</span>
+            </a>
+            <a href="ganancias.html">
+                    <span>📈</span>
+                    <span class="nav-label">Ganancias</span>
+            </a>
+            <a href="historial.html">
+                    <span>📋</span>
+                    <span class="nav-label">Historial</span>
+            </a>
+            <a href="login.html">
+                    <span>🔑</span>
+                    <span class="nav-label">Login</span>
+            </a>
+    </nav>
+    <style>
+    @media (max-width: 700px) {
+        .bottom-nav {
+            position: fixed;
+            left: 0; right: 0; bottom: 0;
+            background: #1e293b;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            box-shadow: 0 -2px 10px #0002;
+            z-index: 100;
+        }
+        .bottom-nav a {
+            color: #c7d2fe;
+            text-decoration: none;
+            font-size: 1.2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+            transition: color 0.2s;
+            padding: 6px 0;
+        }
+        .bottom-nav a:hover {
+            color: #fff;
+        }
+        .bottom-nav .nav-label {
+            font-size: 0.75em;
+            margin-top: 2px;
+        }
+        body { padding-bottom: 70px; }
+        .header-principal nav { display: none; }
+    }
+    @media (min-width: 701px) {
+        .bottom-nav { display: none !important; }
+    }
+    </style>
+</body>
+</html>
