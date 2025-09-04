@@ -1,4 +1,11 @@
 body {
+	font-family: 'Segoe UI', Arial, sans-serif;
+	background: linear-gradient(135deg, #e0e7ff 0%, #f4f4f4 100%);
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+}
+abody {
     font-family: 'Segoe UI', Arial, sans-serif;
     background: linear-gradient(135deg, #e0e7ff 0%, #f4f4f4 100%);
     margin: 0;
@@ -100,4 +107,100 @@ body {
 }
 .movimientos li:last-child {
     border-bottom: none;
+}
+
+.header-principal {
+	background: #1e293b;
+	color: #fff;
+	padding: 24px 0 12px 0;
+	box-shadow: 0 2px 8px rgba(30,41,59,0.08);
+	text-align: center;
+}
+.header-principal nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 12px 0 0 0;
+	display: flex;
+	justify-content: center;
+	gap: 32px;
+}
+.header-principal nav a {
+	color: #c7d2fe;
+	text-decoration: none;
+	font-weight: 500;
+	transition: color 0.2s;
+}
+.header-principal nav a:hover {
+	color: #fff;
+}
+
+.main-principal {
+	max-width: 600px;
+	margin: 40px auto;
+	background: #fff;
+	border-radius: 18px;
+	box-shadow: 0 4px 24px rgba(30,41,59,0.10);
+	padding: 32px 24px;
+}
+
+.saldo {
+	text-align: center;
+	margin-bottom: 32px;
+}
+.saldo h2 {
+	color: #475569;
+	margin-bottom: 8px;
+}
+.saldo-cantidad {
+	font-size: 2.5rem;
+	color: #2563eb;
+	font-weight: bold;
+	margin: 0;
+}
+
+.acciones {
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+	margin-bottom: 32px;
+}
+.acciones button {
+	background: #2563eb;
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	padding: 12px 28px;
+	font-size: 1rem;
+	font-weight: 500;
+	cursor: pointer;
+	box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+	transition: background 0.2s, transform 0.1s;
+}
+.acciones button:hover {
+	background: #1e40af;
+	transform: translateY(-2px) scale(1.04);
+}
+
+.movimientos {
+	background: #f1f5f9;
+	border-radius: 10px;
+	padding: 18px 16px;
+}
+.movimientos h2 {
+	color: #334155;
+	margin-top: 0;
+}
+.movimientos ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.movimientos li {
+	padding: 10px 0;
+	border-bottom: 1px solid #e2e8f0;
+	color: #475569;
+	font-size: 1.05rem;
+}
+.movimientos li:last-child {
+	border-bottom: none;
 }

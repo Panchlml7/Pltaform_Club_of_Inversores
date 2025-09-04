@@ -1,4 +1,4 @@
 document.querySelector('form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Login enviado (demo)');
+	e.preventDefault();
+	alert('Login enviado (demo)');
 });

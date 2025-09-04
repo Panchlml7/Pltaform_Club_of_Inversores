@@ -4,24 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
     <div class="login-container">
         <div class="login-avatar">
             <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Avatar" />
         </div>
-        <h1>Iniciar Sesión</h1>
+        <h1>Login</h1>
         <form>
             <div class="input-group">
-                <label for="usuario">Usuario</label>
-                <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario" required>
+                <label for="email">Email</label>
+                <div class="input-icon">
+                    <span class="icon">🔑</span>
+                    <input type="email" id="email" name="email" placeholder="Ingresar usuario..." required>
+                </div>
             </div>
             <div class="input-group">
                 <label for="password">Contraseña</label>
-                <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required>
+                <div class="input-icon">
+                    <span class="icon">🔒</span>
+                    <input type="password" id="password" name="password" placeholder="Ingresar password..." required>
+                </div>
             </div>
-            <button type="submit">Ingresar</button>
+            <div class="input-group" style="flex-direction: row; align-items: center; gap: 8px;">
+                <input type="checkbox" id="showPassword" onclick="document.getElementById('password').type = this.checked ? 'text' : 'password';">
+                <label for="showPassword" style="margin:0; font-weight:500;">Mostrar contraseña</label>
+            </div>
+            <div class="input-group">
+                <label for="rol">Rol</label>
+                <select id="rol" name="rol" required>
+                    <option value="">Seleccionar</option>
+                    <option value="persona">Persona</option>
+                    <option value="empresa">Empresa</option>
+                </select>
+            </div>
+            <div class="login-buttons">
+                <button type="submit" class="btn-ingresar">Ingresar</button>
+                <button type="button" class="btn-cancelar" onclick="window.location.href='index.html'">Cancelar</button>
+            </div>
         </form>
         <div class="login-extra">
             <a href="#" style="color:#2563eb;">¿Olvidó su contraseña?</a>
