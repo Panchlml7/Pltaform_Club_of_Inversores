@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="other_pag/principal.css">
+</head>
+<body>
+    <header class="header-principal">
+    <h1>Bienvenido a nuestro club de inversores</h1>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="other_pag/dinero.html">Dinero Invertido</a></li>
+                <li><a href="other_pag/ganancias.html">Ganancias</a></li>
+                <li><a href="other_pag/historial.html">Historial</a></li>
+                <li><a href="other_pag/login.html">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-principal">
+        <section class="saldo">
+            <!-- Aquí va el contenido principal, sin barra inferior -->
+        </section>
+    </main>
+    <nav class="bottom-nav">
+        <a href="index.html">
+            <span>🏠</span>
+            <span class="nav-label">Inicio</span>
+        </a>
+        <a href="other_pag/dinero.html">
+            <span>💰</span>
+            <span class="nav-label">Dinero</span>
+        </a>
+        <a href="other_pag/ganancias.html">
+            <span>📈</span>
+            <span class="nav-label">Ganancias</span>
+        </a>
+        <a href="other_pag/historial.html">
+            <span>📋</span>
+            <span class="nav-label">Historial</span>
+        </a>
+        <a href="other_pag/login.html">
+            <span>🔑</span>
+            <span class="nav-label">Login</span>
+        </a>
+    </nav>
+    <style>
+    @media (max-width: 700px) {
+      .bottom-nav {
+        position: fixed;
+        left: 0; right: 0; bottom: 0;
+        background: #1e293b;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+        box-shadow: 0 -2px 10px #0002;
+        z-index: 100;
+      }
+      .bottom-nav a {
+        color: #c7d2fe;
+        text-decoration: none;
+        font-size: 1.2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        transition: color 0.2s;
+        padding: 6px 0;
+      }
+      .bottom-nav a:hover {
+        color: #fff;
+      }
+      .bottom-nav .nav-label {
+        font-size: 0.75em;
+        margin-top: 2px;
+      }
+      body { padding-bottom: 70px; }
+      .top-nav { display: none !important; }
+    }
+    @media (min-width: 701px) {
+      .bottom-nav { display: none !important; }
+      .top-nav { display: block !important; }
+    }
+    </style>
+</body>
+</html>

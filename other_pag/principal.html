@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="header-principal">
-        <h1>Bienvenido al Banco</h1>
+    <h1>Bienvenido a nuestro club de inversores</h1>
         <nav class="top-nav">
             <ul>
                 <li><a href="principal.html">Inicio</a></li>
@@ -19,81 +19,72 @@
             </ul>
         </nav>
     </header>
-    <main class="main-principal">
-        <section class="saldo">
-            <nav class="bottom-nav">
-                    <a href="principal.html">
-                            <span>🏠</span>
-                            <span class="nav-label">Inicio</span>
-                    </a>
-                    <a href="dinero.html">
-                            <span>💰</span>
-                            <span class="nav-label">Dinero</span>
-                    </a>
-                    <a href="ganancias.html">
-                            <span>📈</span>
-                            <span class="nav-label">Ganancias</span>
-                    </a>
-                    <a href="historial.html">
-                            <span>📋</span>
-                            <span class="nav-label">Historial</span>
-                    </a>
-                    <a href="login.html">
-                            <span>🔑</span>
-                            <span class="nav-label">Login</span>
-                    </a>
-            </nav>
-            <style>
-            @media (max-width: 700px) {
-                .bottom-nav {
-                    position: fixed;
-                    left: 0; right: 0; bottom: 0;
-                    background: #1e293b;
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-                    height: 60px;
-                    box-shadow: 0 -2px 10px #0002;
-                    z-index: 100;
-                }
-                .bottom-nav a {
-                    color: #c7d2fe;
-                    text-decoration: none;
-                    font-size: 1.2em;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    flex: 1;
-                    transition: color 0.2s;
-                    padding: 6px 0;
-                }
-                .bottom-nav a:hover {
-                    color: #fff;
-                }
-                .bottom-nav .nav-label {
-                    font-size: 0.75em;
-                    margin-top: 2px;
-                }
-                body { padding-bottom: 70px; }
-                .top-nav { display: none !important; }
+        <main class="main-principal">
+                <section class="saldo">
+                        <!-- Aquí va el contenido principal, sin barra inferior -->
+                </section>
+        </main>
+        <nav class="bottom-nav">
+                <a href="principal.html">
+                        <span>🏠</span>
+                        <span class="nav-label">Inicio</span>
+                </a>
+                <a href="dinero.html">
+                        <span>💰</span>
+                        <span class="nav-label">Dinero</span>
+                </a>
+                <a href="ganancias.html">
+                        <span>📈</span>
+                        <span class="nav-label">Ganancias</span>
+                </a>
+                <a href="historial.html">
+                        <span>📋</span>
+                        <span class="nav-label">Historial</span>
+                </a>
+                <a href="login.html">
+                        <span>🔑</span>
+                        <span class="nav-label">Login</span>
+                </a>
+        </nav>
+        <style>
+        @media (max-width: 700px) {
+            .bottom-nav {
+                position: fixed;
+                left: 0; right: 0; bottom: 0;
+                background: #1e293b;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 60px;
+                box-shadow: 0 -2px 10px #0002;
+                z-index: 100;
             }
-            @media (min-width: 701px) {
-                .bottom-nav { display: none !important; }
-                .top-nav { display: block !important; }
+            .bottom-nav a {
+                color: #c7d2fe;
+                text-decoration: none;
+                font-size: 1.2em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                flex: 1;
+                transition: color 0.2s;
+                padding: 6px 0;
             }
-            </style>
-            padding: 6px 0;
+            .bottom-nav a:hover {
+                color: #fff;
+            }
+            .bottom-nav .nav-label {
+                font-size: 0.75em;
+                margin-top: 2px;
+            }
+            body { padding-bottom: 70px; }
+            .top-nav { display: none !important; }
         }
-        .bottom-nav a:hover {
-            color: #fff;
+        @media (min-width: 701px) {
+            .bottom-nav { display: none !important; }
+            .top-nav { display: block !important; }
         }
-        .bottom-nav .nav-label {
-            font-size: 0.75em;
-            margin-top: 2px;
-        }
-        body { padding-bottom: 70px; }
-    }
-    </style>
+        </style>
 </body>
 </html>
 </html>
